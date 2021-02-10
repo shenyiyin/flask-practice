@@ -23,10 +23,12 @@ def user_page(name):
 
 @app.route("/test")
 def test_url_for():
+    #获取函数名对应的url
     print(url_for('hello'))
     print(url_for('user_page',name="syy"))
     print(url_for('user_page',name="yyf"))
-    print(url_for('test_for_url',num=2))
+    print(url_for('test_url_for'))
+
     return 'Test_page'
 if __name__=="__main__":
     app.run(debug=True)
