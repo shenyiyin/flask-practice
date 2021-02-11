@@ -5,7 +5,9 @@
     <title>{{name}}'s world</title>
 </head>
 <body>
-<h2>{{name}}'s movie list</h2>
+<h2>
+     <img alt="Avatar" src="{{ url_for('static', filename='images/t3.png') }}">
+    {{name}}'s movie list</h2>
 <p>{{movies|length}}Title</p>
 <ul>
     {% for movie in movies%}
@@ -15,6 +17,7 @@
 <footer>
     <small>&copy; 2018 <a href="http://helloflask.com/tutorial">HelloFlask</a>
     </small>
+    <img alt="Walking Totoro" src="{{ url_for('static', filename='images/t2.png') }}">
 </footer>
 </body>
 </html>
